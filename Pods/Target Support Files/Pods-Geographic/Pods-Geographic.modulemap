@@ -1,0 +1,6 @@
+framework module Pods_Geographic {
+  umbrella header "Pods-Geographic-umbrella.h"
+
+  export *
+  module * { export * }
+}

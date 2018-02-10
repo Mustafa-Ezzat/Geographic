@@ -1,0 +1,51 @@
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "0la-Cz-Vxf"; */
+"0la-Cz-Vxf.title" = "ع";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "1xE-v7-RzG"; */
+"1xE-v7-RzG.title" = "Locations";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Ar3-fP-Od2"; */
+"Ar3-fP-Od2.text" = "Name";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "GFL-5P-LFC"; */
+"GFL-5P-LFC.text" = "Email";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "Gfo-jq-KO7"; */
+"Gfo-jq-KO7.text" = "City";
+
+/* Class = "UILabel"; text = "Type value"; ObjectID = "ThK-OQ-uz7"; */
+"ThK-OQ-uz7.text" = "Type value";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "UC1-vx-IK5"; */
+"UC1-vx-IK5.text" = "Phone";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "Ues-AW-jEf"; */
+"Ues-AW-jEf.title" = "Locations";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "VJS-oj-Bbv"; */
+"VJS-oj-Bbv.text" = "Type";
+
+/* Class = "UINavigationItem"; title = "Location Details"; ObjectID = "XK8-45-j2Z"; */
+"XK8-45-j2Z.title" = "Location Details";
+
+/* Class = "UINavigationItem"; title = "Dubai Municipality"; ObjectID = "g0m-H0-Otd"; */
+"g0m-H0-Otd.title" = "Dubai Municipality";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "ihR-rQ-k1D"; */
+"ihR-rQ-k1D.title" = "Locations";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "jZF-eV-7V4"; */
+"jZF-eV-7V4.title" = "ع";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "nwX-Ba-l7N"; */
+"nwX-Ba-l7N.title" = "ع";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "xLm-9G-iNP"; */
+"xLm-9G-iNP.text" = "Website";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "xjs-Yz-7f9"; */
+"xjs-Yz-7f9.title" = "ع";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "zxS-sD-LhE"; */
+"zxS-sD-LhE.text" = "Country";

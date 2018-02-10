@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Geographic
+
+  Created by Mustafa Ezzat on 2/10/18.
+  Copyright © 2018 Mustafa Ezzat. All rights reserved.
+*/
+"RestartMessageBody" = "هذا سيعيد تشغيل التطبيق٠ هل أنت متأكد أنك تريد إغلاق التطبيق الآن؟";
+"RestartMessageTitle" = "يجب إعادة التشغيل";
+"RestartYes" = "نعم";
+"RestartNo" = "لا";
+"WelcomeMessage" = "مرحبا بكم في ";
+"SeeYouSoonMessage" = "نراك قريبا في ";

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Geographic
+
+  Created by Mustafa Ezzat on 2/10/18.
+  Copyright © 2018 Mustafa Ezzat. All rights reserved.
+*/
+"RestartMessageBody" = "This requires restarting the app. Are you sure you want to close the app now";
+"RestartMessageTitle" = "Restart Required";
+"RestartYes" = "Yes";
+"RestartNo" = "No";
+"WelcomeMessage" = "No";
+"SeeYouSoonMessage" = "No";
+

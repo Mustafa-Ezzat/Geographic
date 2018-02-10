@@ -1,0 +1,51 @@
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "0la-Cz-Vxf"; */
+"0la-Cz-Vxf.title" = "EN";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "1xE-v7-RzG"; */
+"1xE-v7-RzG.title" = "المواقع";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Ar3-fP-Od2"; */
+"Ar3-fP-Od2.text" = "الإسم";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "GFL-5P-LFC"; */
+"GFL-5P-LFC.text" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "Gfo-jq-KO7"; */
+"Gfo-jq-KO7.text" = "المدينة";
+
+/* Class = "UILabel"; text = "Type value"; ObjectID = "ThK-OQ-uz7"; */
+"ThK-OQ-uz7.text" = "قيمة النوع";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "UC1-vx-IK5"; */
+"UC1-vx-IK5.text" = "الهاتف";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "Ues-AW-jEf"; */
+"Ues-AW-jEf.title" = "المواقع";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "VJS-oj-Bbv"; */
+"VJS-oj-Bbv.text" = "النوع";
+
+/* Class = "UINavigationItem"; title = "Location Details"; ObjectID = "XK8-45-j2Z"; */
+"XK8-45-j2Z.title" = "تفاصيل الموقع";
+
+/* Class = "UINavigationItem"; title = "Dubai Municipality"; ObjectID = "g0m-H0-Otd"; */
+"g0m-H0-Otd.title" = "بلدية دبي";
+
+/* Class = "UINavigationItem"; title = "Locations"; ObjectID = "ihR-rQ-k1D"; */
+"ihR-rQ-k1D.title" = "المواقع";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "jZF-eV-7V4"; */
+"jZF-eV-7V4.title" = "EN";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "nwX-Ba-l7N"; */
+"nwX-Ba-l7N.title" = "EN";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "xLm-9G-iNP"; */
+"xLm-9G-iNP.text" = "الموقع الإلكتروني";
+
+/* Class = "UIBarButtonItem"; title = "ع"; ObjectID = "xjs-Yz-7f9"; */
+"xjs-Yz-7f9.title" = "EN";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "zxS-sD-LhE"; */
+"zxS-sD-LhE.text" = "الدولة";
