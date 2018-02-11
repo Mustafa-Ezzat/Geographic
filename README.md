@@ -17,15 +17,15 @@ The app should use local notification if the user enters the region of one of th
 
 # Test 
 
-# Travel and visit location to test ooooh!
+1- By traveling to places ooooh!
 
-# Don't worry also you can test from your home
+2- Don't worry also you can test from your place
 
-1- In range 
+1- In range (.gpx file)
 
 ![Alt text](https://s9.postimg.org/pnbtilw9r/Screen_Shot_2018-02-11_at_1.23.55_AM.png?raw=true "In Rang")
 
-2- Out range
+2- Out range (.gpx file)
 
 ![Alt text](https://s9.postimg.org/b44oh6vf3/Screen_Shot_2018-02-11_at_1.25.47_AM.png?raw=true "Out Rang")
 
