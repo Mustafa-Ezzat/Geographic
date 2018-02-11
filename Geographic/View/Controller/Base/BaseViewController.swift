@@ -18,7 +18,6 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         handleNavBar()
        
@@ -46,6 +45,15 @@ class BaseViewController: UIViewController {
     @IBAction func backActionWithoutAnimation(_ sender: Any) {
         _ = navigationController?.popViewController(animated: false)
     }
+    
+    @IBAction func switchLanguage(_ sender: Any) {
+        alert(message: Localize.RestartMessageBody.localized(), title: Localize.RestartMessageTitle.localized())
+    }
+    
+    func getColor(with hexString:String) -> UIColor {
+        return UIColor(hexString: hexString)
+    }
+    
     func handleNavBar() {
         if let font = UIFont(name: AppConstant.Font.Family.Dubai.Regular, size: 22){
             self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.foregroundColor:getColor(with: AppConstant.Color.NavBar), NSAttributedStringKey.font: font]
@@ -59,14 +67,7 @@ class BaseViewController: UIViewController {
             }
         }
     }
-    func getColor(with hexString:String) -> UIColor {
-        return UIColor(hexString: hexString)
-    }
-    
-    @IBAction func switchLanguage(_ sender: Any) {
-        alert(message: Localize.RestartMessageBody.localized(), title: Localize.RestartMessageTitle.localized())
-    }
-    
+
     func restartApp() {
          if LanguageManager.sharedInstance.currentAppleLanguage() == Language.EN {
             LanguageManager.sharedInstance.setAppleLAnguageTo(language: Language.AR)
@@ -82,7 +83,6 @@ class BaseViewController: UIViewController {
         guard let number = URL(string: "tel://" + phoneText) else {
             return
         }
-        
         if #available(iOS 10, *) {
             UIApplication.shared.open(number)
         } else {
@@ -97,6 +97,44 @@ class BaseViewController: UIViewController {
             
         } else {
             NSLog("Can't use comgooglemaps://");
+        }
+    }
+}
+
+
+extension BaseViewController {
+    func alert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: Localize.RestartYes.localized(), style: .default, handler: {(alert:UIAlertAction!)
+            in
+            self.restartApp()
+        })
+        
+        let CancelAction = UIAlertAction(title: Localize.RestartNo.localized(), style: .default, handler: nil)
+        
+        alertController.addAction(OKAction)
+        alertController.addAction(CancelAction)
+        
+        alertController.view.tintColor = getColor(with: AppConstant.Color.NavBar)
+        self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension BaseViewController: UNUserNotificationCenterDelegate{
+    
+    // MARK: UNUserNotificationCenterDelegate
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        print("response: ", response.notification.request.content.userInfo)
+        if let destination = response.notification.request.content.userInfo["Location"] as? String{
+            self.openGoogleMap(destination: destination)
+        }
+    }
+    //This is key callback to present notification while the app is in foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        if notification.request.identifier == requestIdentifier{
+            completionHandler( [.alert,.sound,.badge])
         }
     }
     
@@ -142,40 +180,4 @@ class BaseViewController: UIViewController {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: [requestIdentifier])
     }
-
 }
-
-extension BaseViewController:UNUserNotificationCenterDelegate{
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        print("response: ", response.notification.request.content.userInfo)
-        if let destination = response.notification.request.content.userInfo["Location"] as? String{
-            self.openGoogleMap(destination: destination)
-        }
-    }
-    //This is key callback to present notification while the app is in foreground
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        if notification.request.identifier == requestIdentifier{
-            completionHandler( [.alert,.sound,.badge])
-        }
-    }
-}
-
-extension BaseViewController {
-    func alert(message: String, title: String = "") {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let OKAction = UIAlertAction(title: Localize.RestartYes.localized(), style: .default, handler: {(alert:UIAlertAction!)
-            in
-            self.restartApp()
-        })
-        
-        let CancelAction = UIAlertAction(title: Localize.RestartNo.localized(), style: .default, handler: nil)
-        
-        alertController.addAction(OKAction)
-        alertController.addAction(CancelAction)
-        
-        alertController.view.tintColor = getColor(with: AppConstant.Color.NavBar)
-        self.present(alertController, animated: true, completion: nil)
-    }
-}
-

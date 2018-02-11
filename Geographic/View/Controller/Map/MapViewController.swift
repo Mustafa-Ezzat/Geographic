@@ -11,7 +11,6 @@ import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
 
-
 class MapViewController: BaseViewController {
     
     @IBOutlet weak var mapView: GMSMapView!
