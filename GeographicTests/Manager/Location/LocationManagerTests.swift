@@ -1,16 +1,18 @@
 //
-//  GeographicTests.swift
+//  LocationManagerTests.swift
 //  GeographicTests
 //
-//  Created by Mustafa Ezzat on 2/7/18.
+//  Created by Mustafa Ezzat on 2/11/18.
 //  Copyright © 2018 Mustafa Ezzat. All rights reserved.
 //
 
 import XCTest
+import GoogleMaps
 @testable import Geographic
 
-class GeographicTests: XCTestCase {
-        
+class LocationManagerTests: XCTestCase {
+    let locationListViewModel = LocationListViewModel()
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,9 +23,13 @@ class GeographicTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testCreateLocation() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.\
+        for location in locationListViewModel.getLocationList().value{
+            let locationCoordinate = LocationManager.sharedInstance.createLocation(locationViewModel: location)
+            XCTAssert(!(locationCoordinate.latitude == -1 || locationCoordinate.longitude == -1))
+        }
     }
     
     func testPerformanceExample() {
@@ -32,5 +38,4 @@ class GeographicTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }

@@ -11,24 +11,16 @@
 import Foundation
 import RxSwift
 
-protocol LocationListViewModelDelegate {
-    func locationListFetchedSuccess()
-    func locationListFetchedFail()
-}
-
 class LocationListViewModel {
-    var delegate:LocationListViewModelDelegate!
     private var locationList = Variable<[LocationViewModel]>([])
     private var disposeBag = DisposeBag()
     
     init() {
+        fetchData()
     }
     
-    func prepareData() {
+    private func fetchData() {
         locationList.value.append(contentsOf: handleLocationsViewModel())
-        if locationList.value.count > 0{
-            delegate.locationListFetchedSuccess()
-        }
     }
     
     func getLocationList() -> Variable<[LocationViewModel]> {
@@ -45,7 +37,6 @@ class LocationListViewModel {
                 locationModelList = try decoder.decode([LocationModel].self, from: data)
             } catch {
                 // handle error
-                delegate.locationListFetchedFail()
             }
         }
         

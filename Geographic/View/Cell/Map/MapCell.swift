@@ -35,7 +35,7 @@ extension MapCell{
     
     func createMarker(locationViewModel:LocationViewModel){
         let marker = GMSMarker()
-        let location = CLLocationCoordinate2D(latitude: Double(locationViewModel.latitude)!, longitude: Double(locationViewModel.longitude)!)
+        let location = LocationManager.sharedInstance.createLocation(locationViewModel: locationViewModel)
         marker.position = location
         marker.map = mapView
         marker.userData = locationViewModel

@@ -54,7 +54,7 @@
                                 <action selector="switchLanguage:" destination="BYZ-38-t0r" id="10M-za-cBT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="Map" id="vrq-Rh-bmi">
+                        <barButtonItem key="rightBarButtonItem" image="Map" id="vrq-Rh-bmi">
                             <connections>
                                 <action selector="toggleAction:" destination="BYZ-38-t0r" id="Ok9-6H-4wi"/>
                             </connections>

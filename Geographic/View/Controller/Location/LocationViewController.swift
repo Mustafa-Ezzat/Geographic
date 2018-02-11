@@ -32,9 +32,8 @@ class LocationViewController: MapViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        locationListViewModel.delegate = self
-        locationListViewModel.prepareData()
         prepareBindingData()
+        handleMap()
         locationTableView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "bg.png"))
         
     }
@@ -142,17 +141,4 @@ extension LocationViewController{
         mapView.animate(with: update)
     }
 }
-
-extension LocationViewController: LocationListViewModelDelegate{
-    func locationListFetchedSuccess() {
-        toggleItem.isEnabled = true
-        handleMap()
-    }
-    
-    func locationListFetchedFail() {
-        
-    }
-}
-
-
 

@@ -1,16 +1,18 @@
 //
-//  GeographicTests.swift
+//  LocationListViewModelTests.swift
 //  GeographicTests
 //
-//  Created by Mustafa Ezzat on 2/7/18.
+//  Created by Mustafa Ezzat on 2/10/18.
 //  Copyright © 2018 Mustafa Ezzat. All rights reserved.
 //
 
 import XCTest
+import RxSwift
 @testable import Geographic
 
-class GeographicTests: XCTestCase {
-        
+class LocationListViewModelTests: XCTestCase {
+    let locationListViewModel = LocationListViewModel()
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,9 +23,16 @@ class GeographicTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testGetLocationList() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.\
+        XCTAssert((locationListViewModel.getLocationList() as Any) is Variable<[LocationViewModel]>)
+    }
+    
+    func testLocationListCount() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.\
+        XCTAssert(locationListViewModel.getLocationList().value.count == 10)
     }
     
     func testPerformanceExample() {
@@ -32,5 +41,5 @@ class GeographicTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
 }

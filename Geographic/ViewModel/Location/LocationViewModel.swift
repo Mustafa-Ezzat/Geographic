@@ -119,5 +119,4 @@ class LocationViewModel {
     init(locationModel:LocationModel){
         self.locationModel = locationModel
     }
-    
 }

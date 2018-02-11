@@ -9,6 +9,6 @@
 "RestartMessageTitle" = "Restart Required";
 "RestartYes" = "Yes";
 "RestartNo" = "No";
-"WelcomeMessage" = "No";
-"SeeYouSoonMessage" = "No";
+"WelcomeMessage" = "Welcome to ";
+"SeeYouSoonMessage" = "See you soon in ";
 

@@ -101,23 +101,23 @@ extension MapViewController: CLLocationManagerDelegate, GMSMapViewDelegate{
     
     func createMarker(locationViewModel:LocationViewModel){
         let marker = GMSMarker()
-        let location = CLLocationCoordinate2D(latitude: Double(locationViewModel.latitude)!, longitude: Double(locationViewModel.longitude)!)
+        let location = LocationManager.sharedInstance.createLocation(locationViewModel: locationViewModel)
         marker.position = location
         //marker.icon = UIImage(named: AppConstant.Image.PlaceMarker)
         marker.map = mapView
         marker.userData = locationViewModel
         markers.append(marker)
     }
-    
+        
     func updateCamera(locationViewModel:LocationViewModel) {
-        let location = CLLocationCoordinate2D(latitude: Double(locationViewModel.latitude)!, longitude: Double(locationViewModel.longitude)!)
+        let location = LocationManager.sharedInstance.createLocation(locationViewModel: locationViewModel)
         let camera = GMSCameraPosition.camera(withLatitude: location.latitude, longitude: location.longitude, zoom: 16)
         self.mapView.camera = camera
     }
     
     // Add Region
     func addRegion(locationViewModel:LocationViewModel) {
-        let location = CLLocationCoordinate2D(latitude: Double(locationViewModel.latitude)!, longitude: Double(locationViewModel.longitude)!)
+        let location = LocationManager.sharedInstance.createLocation(locationViewModel: locationViewModel)
         let region = CLCircularRegion(center: location, radius: 100, identifier: locationViewModel.locationID)
         locationManager.startMonitoring(for: region)
         regionDictionary[region.identifier] = locationViewModel

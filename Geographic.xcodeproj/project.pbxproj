@@ -10,9 +10,11 @@
 		3BFE04148B606EFD6DE98101 /* Pods_GeographicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837A7982FEF012AB31EF73CD /* Pods_GeographicTests.framework */; };
 		45129AD9202F4AB30087213C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45129AD7202F4AB30087213C /* Main.storyboard */; };
 		452D6E49202F3CEB007B0DE9 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452D6E48202F3CEB007B0DE9 /* Localize.swift */; };
+		455A3423202F9D8F00FEDC85 /* LocationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A3422202F9D8F00FEDC85 /* LocationListViewModelTests.swift */; };
+		455A3427202FA95800FEDC85 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A3426202FA95800FEDC85 /* LocationManagerTests.swift */; };
 		45B19E48202DCE7C00ECF220 /* OutRange.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 45B19E47202DCE7C00ECF220 /* OutRange.gpx */; };
 		45B19E4A202DCF5A00ECF220 /* DM Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 45B19E49202DCF5A00ECF220 /* DM Locations.json */; };
-		45DAFBB8202E7138009B41E3 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFBB7202E7138009B41E3 /* SharedManager.swift */; };
+		45DAFBB8202E7138009B41E3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFBB7202E7138009B41E3 /* LocationManager.swift */; };
 		45DAFBBC202E7433009B41E3 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFBBB202E7433009B41E3 /* LanguageManager.swift */; };
 		45F3083A202F50FE001C428A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45F3083C202F50FE001C428A /* Localizable.strings */; };
 		A71947868A4FD69EDD6C2E66 /* Pods_Geographic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CF0F5D08AB5F3CEBF71345 /* Pods_Geographic.framework */; };
@@ -66,9 +68,11 @@
 /* Begin PBXFileReference section */
 		45129AD8202F4AB30087213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		452D6E48202F3CEB007B0DE9 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		455A3422202F9D8F00FEDC85 /* LocationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModelTests.swift; sourceTree = "<group>"; };
+		455A3426202FA95800FEDC85 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 		45B19E47202DCE7C00ECF220 /* OutRange.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OutRange.gpx; sourceTree = "<group>"; };
 		45B19E49202DCF5A00ECF220 /* DM Locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "DM Locations.json"; sourceTree = "<group>"; };
-		45DAFBB7202E7138009B41E3 /* SharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedManager.swift; sourceTree = "<group>"; };
+		45DAFBB7202E7138009B41E3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		45DAFBBB202E7433009B41E3 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		45F30834202F4E9A001C428A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		45F30835202F4E9A001C428A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -157,6 +161,38 @@
 			path = Localize;
 			sourceTree = "<group>";
 		};
+		455A3420202F9D2F00FEDC85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				455A3421202F9D3B00FEDC85 /* Location */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		455A3421202F9D3B00FEDC85 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				455A3422202F9D8F00FEDC85 /* LocationListViewModelTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		455A3424202FA70E00FEDC85 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				455A3425202FA71B00FEDC85 /* Location */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		455A3425202FA71B00FEDC85 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				455A3426202FA95800FEDC85 /* LocationManagerTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		45B19E46202DCE5F00ECF220 /* Range */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +202,12 @@
 			path = Range;
 			sourceTree = "<group>";
 		};
-		45DAFBB6202E6C41009B41E3 /* SharedManager */ = {
+		45DAFBB6202E6C41009B41E3 /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				45DAFBB7202E7138009B41E3 /* SharedManager.swift */,
+				45DAFBB7202E7138009B41E3 /* LocationManager.swift */,
 			);
-			path = SharedManager;
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 		45DAFBB9202E73F5009B41E3 /* Localization */ = {
@@ -229,11 +265,11 @@
 		D64E9EE4202AD14F00C7E2D1 /* Geographic */ = {
 			isa = PBXGroup;
 			children = (
-				45DAFBB9202E73F5009B41E3 /* Localization */,
 				D64E9F28202AD87700C7E2D1 /* Model */,
 				D64E9F29202AD87D00C7E2D1 /* View */,
 				D64E9F2A202AD88600C7E2D1 /* ViewModel */,
-				45DAFBB6202E6C41009B41E3 /* SharedManager */,
+				45DAFBB9202E73F5009B41E3 /* Localization */,
+				45DAFBB6202E6C41009B41E3 /* LocationManager */,
 				D64E9F43202AF12000C7E2D1 /* AppConstant */,
 				D6C8B757202C4B3B004D8989 /* Extension */,
 				D64E9F16202AD19A00C7E2D1 /* Resources */,
@@ -250,6 +286,8 @@
 		D64E9EFC202AD15000C7E2D1 /* GeographicTests */ = {
 			isa = PBXGroup;
 			children = (
+				455A3424202FA70E00FEDC85 /* Manager */,
+				455A3420202F9D2F00FEDC85 /* ViewModel */,
 				D64E9EFD202AD15000C7E2D1 /* GeographicTests.swift */,
 				D64E9EFF202AD15000C7E2D1 /* Info.plist */,
 			);
@@ -788,7 +826,7 @@
 				D65E041D202B991B007965C0 /* PlaceDetailsViewController.swift in Sources */,
 				452D6E49202F3CEB007B0DE9 /* Localize.swift in Sources */,
 				D64E9F30202ADB6800C7E2D1 /* LocationViewModel.swift in Sources */,
-				45DAFBB8202E7138009B41E3 /* SharedManager.swift in Sources */,
+				45DAFBB8202E7138009B41E3 /* LocationManager.swift in Sources */,
 				D64E9EEE202AD14F00C7E2D1 /* Geographic.xcdatamodeld in Sources */,
 				45DAFBBC202E7433009B41E3 /* LanguageManager.swift in Sources */,
 				D64E9F36202AEEBB00C7E2D1 /* BaseViewController.swift in Sources */,
@@ -805,6 +843,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455A3427202FA95800FEDC85 /* LocationManagerTests.swift in Sources */,
+				455A3423202F9D8F00FEDC85 /* LocationListViewModelTests.swift in Sources */,
 				D64E9EFE202AD15000C7E2D1 /* GeographicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
