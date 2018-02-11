@@ -5,11 +5,11 @@ The app should use local notification if the user enters the region of one of th
 
 1- Foreground
 
-![Alt text](https://s9.postimg.org/9nt5z27xr/Whats_App_Image_2018-02-11_at_2.14.42_AM.jpg?raw=true "Foreground")
+![Alt text](https://s9.postimg.org/eqahttu2n/Whats_App_Image_2018-02-11_at_3.14.47_AM_1.jpg?raw=true "Foreground")
 
 2- Background or Terminated
 
-![Alt text](https://s9.postimg.org/lpojt6u0v/Whats_App_Image_2018-02-11_at_2.14.42_AM_6.jpg?raw=true "Terminated")
+![Alt text](https://s9.postimg.org/4g82ulbwv/Whats_App_Image_2018-02-11_at_3.14.47_AM.jpg?raw=true "Terminated")
 
 # Test 
 
@@ -38,7 +38,7 @@ Note: Restart the app recommended by Apple and is implemented in global applicat
 
 1- English
 
-![Alt text](https://s9.postimg.org/5rfu332dr/Whats_App_Image_2018-02-11_at_2.16.02_AM.jpg?raw=true "Terminated")
+![Alt text](https://s9.postimg.org/a4edliy9r/Whats_App_Image_2018-02-11_at_3.19.03_AM.jpg?raw=true "Terminated")
 
 2- Arabic
 
