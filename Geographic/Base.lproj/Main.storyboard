@@ -96,6 +96,22 @@
                                                     <outlet property="delegate" destination="Dw0-ma-Jtb" id="qj3-KA-Wjy"/>
                                                 </connections>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-wn-tKB">
+                                                <rect key="frame" x="311" y="296" width="56" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="56" id="Tua-wc-3j3"/>
+                                                    <constraint firstAttribute="height" constant="56" id="yoZ-rj-KIb"/>
+                                                </constraints>
+                                                <state key="normal" image="go.png"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="28"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="openGoogleAction:" destination="Dw0-ma-Jtb" eventType="touchUpInside" id="Aqt-PJ-TRB"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3j-gg-VBG">
                                                 <rect key="frame" x="0.0" y="360" width="375" height="40"/>
                                                 <subviews>
@@ -358,10 +374,12 @@
                                             <constraint firstAttribute="height" constant="724" id="Wkp-1R-H3C"/>
                                             <constraint firstItem="E3j-gg-VBG" firstAttribute="leading" secondItem="tNq-Ei-Xi2" secondAttribute="leading" id="XOo-GP-Z2i"/>
                                             <constraint firstAttribute="trailing" secondItem="Bvc-wp-MCQ" secondAttribute="trailing" id="XdO-Bm-tdE"/>
+                                            <constraint firstAttribute="trailing" secondItem="cj7-wn-tKB" secondAttribute="trailing" constant="8" id="XfI-6y-wqZ"/>
                                             <constraint firstItem="kQ5-tp-HH1" firstAttribute="top" secondItem="LVm-Sd-4ht" secondAttribute="bottom" constant="8" id="YIN-NH-Q3q"/>
                                             <constraint firstItem="rQ1-Vf-0eo" firstAttribute="top" secondItem="kQ5-tp-HH1" secondAttribute="bottom" constant="8" id="YSb-vq-LtM"/>
                                             <constraint firstItem="Gdq-b3-wjm" firstAttribute="top" secondItem="rQ1-Vf-0eo" secondAttribute="bottom" constant="8" id="dL1-su-c2i"/>
                                             <constraint firstItem="kQ5-tp-HH1" firstAttribute="leading" secondItem="tNq-Ei-Xi2" secondAttribute="leading" id="fER-U4-HFl"/>
+                                            <constraint firstItem="E3j-gg-VBG" firstAttribute="top" secondItem="cj7-wn-tKB" secondAttribute="bottom" constant="8" id="jMK-6z-qr4"/>
                                             <constraint firstAttribute="trailing" secondItem="Gdq-b3-wjm" secondAttribute="trailing" id="kbF-10-SeQ"/>
                                             <constraint firstAttribute="trailing" secondItem="E3j-gg-VBG" secondAttribute="trailing" id="n47-g1-Qfg"/>
                                             <constraint firstAttribute="trailing" secondItem="VpN-79-b3J" secondAttribute="trailing" id="nLF-Sz-25N"/>
@@ -531,12 +549,13 @@
         <image name="Map" width="24" height="24"/>
         <image name="city" width="24" height="24"/>
         <image name="email" width="24" height="24"/>
+        <image name="go.png" width="128" height="128"/>
         <image name="leftArrow" width="24" height="24"/>
         <image name="phone" width="24" height="24"/>
         <image name="rightArrow" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="42u-hE-c2d"/>
+        <segue reference="O4i-IA-dH8"/>
         <segue reference="N6w-7g-G1l"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@
 		452D6E49202F3CEB007B0DE9 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452D6E48202F3CEB007B0DE9 /* Localize.swift */; };
 		455A3423202F9D8F00FEDC85 /* LocationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A3422202F9D8F00FEDC85 /* LocationListViewModelTests.swift */; };
 		455A3427202FA95800FEDC85 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A3426202FA95800FEDC85 /* LocationManagerTests.swift */; };
+		455BD63A202FE6A2004EAEFC /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = 455BD639202FE6A0004EAEFC /* go.png */; };
 		45B19E48202DCE7C00ECF220 /* OutRange.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 45B19E47202DCE7C00ECF220 /* OutRange.gpx */; };
 		45B19E4A202DCF5A00ECF220 /* DM Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 45B19E49202DCF5A00ECF220 /* DM Locations.json */; };
 		45DAFBB8202E7138009B41E3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFBB7202E7138009B41E3 /* LocationManager.swift */; };
@@ -70,6 +71,7 @@
 		452D6E48202F3CEB007B0DE9 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		455A3422202F9D8F00FEDC85 /* LocationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModelTests.swift; sourceTree = "<group>"; };
 		455A3426202FA95800FEDC85 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		455BD639202FE6A0004EAEFC /* go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go.png; sourceTree = "<group>"; };
 		45B19E47202DCE7C00ECF220 /* OutRange.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OutRange.gpx; sourceTree = "<group>"; };
 		45B19E49202DCF5A00ECF220 /* DM Locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "DM Locations.json"; sourceTree = "<group>"; };
 		45DAFBB7202E7138009B41E3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		D64E9F19202AD1BD00C7E2D1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				455BD639202FE6A0004EAEFC /* go.png */,
 				D6C8B75A202C51CA004D8989 /* bg.png */,
 				D64E9F48202B3E5100C7E2D1 /* placeMarker.png */,
 				D65E0420202BAACB007965C0 /* dubai-muncipalty.png */,
@@ -636,6 +639,7 @@
 				D64E9F42202AF04800C7E2D1 /* LocationCell.xib in Resources */,
 				D6C8B756202BCF97004D8989 /* InRange.gpx in Resources */,
 				D64E9F21202AD1DB00C7E2D1 /* Dubai-Light.ttf in Resources */,
+				455BD63A202FE6A2004EAEFC /* go.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

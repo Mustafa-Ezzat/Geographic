@@ -89,6 +89,12 @@ class PlaceDetailsViewController: MapViewController {
         LanguageManager.sharedInstance.mirrorImageView(imageView: theImageView)
     }
     
+    @IBAction func openGoogleAction(_ sender: Any) {
+        let destination = "\((locationViewModel?.latitude)!),\((locationViewModel?.longitude)!)"
+        openGoogleMap(destination: destination)
+    }
+    
+    
     @IBAction func openUrlAction(_ sender: Any) {
         performSegue(withIdentifier: AppConstant.Segue.Web, sender: self)
     }

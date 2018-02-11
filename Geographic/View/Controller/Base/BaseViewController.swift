@@ -90,6 +90,16 @@ class BaseViewController: UIViewController {
         }
     }
     
+    func openGoogleMap(source: String = "", destination: String) {
+        if (UIApplication.shared.canOpenURL(NSURL(string:"comgooglemaps://")! as URL)) {
+            UIApplication.shared.open(URL(string:
+                "comgooglemaps://?saddr=\(source)&daddr=\(destination)&directionsmode=driving")!)
+            
+        } else {
+            NSLog("Can't use comgooglemaps://");
+        }
+    }
+    
     func triggerNotification(locationViewModel:LocationViewModel, welcomeMessage:String){
         let content = UNMutableNotificationContent()
         if LanguageManager.sharedInstance.currentAppleLanguage() == Language.AR{
@@ -101,6 +111,7 @@ class BaseViewController: UIViewController {
             content.subtitle = locationViewModel.city
             content.body = welcomeMessage + locationViewModel.name
         }
+        content.userInfo = ["Location": "\(locationViewModel.latitude),\(locationViewModel.longitude)"]
         content.sound = UNNotificationSound.default()
         
         //To Present image in notification
@@ -137,6 +148,10 @@ class BaseViewController: UIViewController {
 extension BaseViewController:UNUserNotificationCenterDelegate{
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
+        print("response: ", response.notification.request.content.userInfo)
+        if let destination = response.notification.request.content.userInfo["Location"] as? String{
+            self.openGoogleMap(destination: destination)
+        }
     }
     //This is key callback to present notification while the app is in foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
