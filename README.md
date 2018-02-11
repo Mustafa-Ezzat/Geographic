@@ -4,6 +4,7 @@ The app should use local notification if the user enters the region of one of th
 # Notification
 
 1- Foreground
+
 ![Alt text](https://s9.postimg.org/9nt5z27xr/Whats_App_Image_2018-02-11_at_2.14.42_AM.jpg?raw=true "Foreground")
 
 2- Background or Terminated
