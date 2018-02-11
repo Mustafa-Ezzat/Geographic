@@ -19,10 +19,17 @@ The app should use local notification if the user enters the region of one of th
 
 1- In range 
 
+![Alt text](https://s9.postimg.org/pnbtilw9r/Screen_Shot_2018-02-11_at_1.23.55_AM.png?raw=true "In Rang")
 
 2- Out range
 
+![Alt text](https://s9.postimg.org/b44oh6vf3/Screen_Shot_2018-02-11_at_1.25.47_AM.png?raw=true "Out Rang")
+
+
 # UnitTest samples
+
+![Alt text](https://s9.postimg.org/yv41z9t1b/Screen_Shot_2018-02-11_at_1.21.30_AM.png?raw=true "Out Rang")
+
 
 # App support english and arabic language
 
