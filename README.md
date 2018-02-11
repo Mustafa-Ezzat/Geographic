@@ -11,6 +11,34 @@ The app should use local notification if the user enters the region of one of th
 
 ![Alt text](https://s9.postimg.org/lpojt6u0v/Whats_App_Image_2018-02-11_at_2.14.42_AM_6.jpg?raw=true "Terminated")
 
+# Test 
+
+# Travel and visit location to test ooooh!
+
+# Don't worry also you can test from your home
+
+1- In range 
+
+
+2- Out range
+
+# UnitTest samples
+
+# App support english and arabic language
+
+Note: Restart the app recommended by Apple and is implemented in global applications such as Booking and Careem.
+
+
+1- English
+
+![Alt text](https://s9.postimg.org/5rfu332dr/Whats_App_Image_2018-02-11_at_2.16.02_AM.jpg?raw=true "Terminated")
+
+2- Arabic
+
+![Alt text](https://s9.postimg.org/knedamo27/Whats_App_Image_2018-02-11_at_2.14.42_AM_2.jpg?raw=true "Terminated")
+
+
+
 
 
 
