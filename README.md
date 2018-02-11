@@ -38,7 +38,7 @@ Note: Restart the app recommended by Apple and is implemented in global applicat
 
 1- English
 
-![Alt text](https://s9.postimg.org/5rfu332dr/Whats_App_Image_2018-02-11_at_2.16.02_AM.jpg?raw=true "Terminated")
+![Alt text](https://s9.postimg.org/a4edliy9r/Whats_App_Image_2018-02-11_at_3.19.03_AM.jpg?raw=true "Terminated")
 
 2- Arabic
 
