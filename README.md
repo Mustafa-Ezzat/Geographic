@@ -42,6 +42,10 @@ c- Out range (.gpx file)
 
 ![Alt text](https://s9.postimg.org/yv41z9t1b/Screen_Shot_2018-02-11_at_1.21.30_AM.png?raw=true "Out Rang")
 
+# UITest Samples
+
+![Alt text](https://s13.postimg.org/etg2jiyif/Screen_Shot_2018-02-13_at_11.02.45_AM.png?raw=true "Out Rang")
+
 
 # App support english and arabic language
 
