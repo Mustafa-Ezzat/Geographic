@@ -65,7 +65,7 @@ Note: Restart the app recommended by Apple and is implemented in global applicat
 
 When add small map view on the right side of the cell which shows the real location of the DM location
 Note: In large data of locations take map snapshot instead of use GMSMapView
-[
+{
   func takeMapSnapshot(latitude: String, longitude: String)  {
         let Width = 100
         let Height = 200
@@ -81,6 +81,6 @@ Note: In large data of locations take map snapshot instead of use GMSMapView
         
         APIManager.sharedInstance.downloadImg(imgView: mapSnapshot, with: staticImageUrl, placeholderImage:  placeHolderSnapshot)
     }
-]
+}
 
 
