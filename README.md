@@ -61,7 +61,26 @@ Note: Restart the app recommended by Apple and is implemented in global applicat
 ![Alt text](https://s9.postimg.org/knedamo27/Whats_App_Image_2018-02-11_at_2.14.42_AM_2.jpg?raw=true "Terminated")
 
 
+# Challenges
 
+When add small map view on the right side of the cell which shows the real location of the DM location
+Note: In large data of locations take map snapshot instead of use GMSMapView
+
+  func takeMapSnapshot(latitude: String, longitude: String) {
+        let Width = 100
+        let Height = 200
+        
+        let mapImageUrl = "https://maps.googleapis.com/maps/api/staticmap?center="
+        let latlong = "\(latitude), \(longitude)"
+        
+        let mapUrl  = mapImageUrl + latlong
+        
+        let size = "&size=" +  "\(Int(Width))" + "x" +  "\(Int(Height))"
+        let positionOnMap = "&markers=size:mid|color:red|" + latlong
+        let staticImageUrl = mapUrl + size + positionOnMap
+        
+        APIManager.sharedInstance.downloadImg(imgView: mapSnapshot, with: staticImageUrl, placeholderImage:  placeHolderSnapshot)
+    }
 
 
 
